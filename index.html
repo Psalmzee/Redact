@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text Redaction App</h1>
+        <div>
+            <label for="inputText">Enter your text:</label>
+            <textarea id="inputText" rows="6" cols="50"></textarea>
+        </div>
+        <div>
+            <label for="redactWords">Words to redact (separated by space):</label>
+            <input type="text" id="redactWords">
+        </div>
+        <div>
+            <label for="replacementChar">Character to use for redaction:</label>
+            <input type="text" id="replacementChar">
+        </div>
+        <button id="redactButton">Redact Now</button>
+    </div>
+    <div id="output" class="container">
+        <h2>Redacted Text:</h2>
+        <div id="redactedText"></div>
+        <h2>Stats:</h2>
+        <div id="stats"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
